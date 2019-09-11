@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari|Shadows+Into+Light&display=swap');
+body{
+    background-image: url("./bilderr/Webp.net-compress-image.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+
+
+
+}
+h1{
+color: aliceblue;
+font-size: 100px;
+font-family: 'Manjari', sans-serif;
+}
+h2{
+color: aliceblue;
+font-size: 60px;
+font-family: 'Shadows Into Light', cursive;
+
+
+}
+p{
+    color: aliceblue;
+font-size: 10;
+font-family: 'Shadows Into Light', cursive;
+}
+a{
+    color: aliceblue;
+}
