@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Allan&display=swap');
+body {
+    background-image: url(./bilder/skane.jpg)
+}
+h1 {
+    font-size: 50px;
+    color: yellow;
+    margin-left: 150px;
+    font-family: serif;
+    margin-right: 150p15 text-transform: uppercase;
+    
+}
+p {
+    font-size: 20px;
+    color: yellow;
+    margin-left: 150px;
+    font-family: serif;
+    margin-right: 150px;
+    background-color: rgb(92, 92, 190);
+    width: 500px;
+    border: 5px solid orange;
+    border-radius: 10px;
+    padding: 25px;
+    font-style: italic;
+
+
+}
+img {
+    margin-left: 150px;
+    width: 100px;
+
+}

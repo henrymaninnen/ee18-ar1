@@ -1,0 +1,20 @@
+body {
+    background: url(./bilder/America-astronaout.jpg);
+    background-size: cover;
+    background-position: 0 -100px;
+
+}
+h1 {
+    margin-top: 650px;
+    margin-left: 500px;
+    color: white;
+    font: 70px;
+    font-family: sans-serif;
+}
+h2 {
+    
+    margin-left: 500px;
+    color: white;
+    font: 40px;
+    font-family: sans-serif;
+}
