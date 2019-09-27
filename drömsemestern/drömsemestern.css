@@ -1,7 +1,6 @@
 body {
     background: url(./bilder/derek-thomson-TWoL-QCZubY-unsplash\ \(1\).jpg);
     background-size: cover;
-
 }
 h1 {
     margin-left: 200px;
@@ -9,6 +8,8 @@ h1 {
     font-family: sans-serif;
     color: white;
     margin-top: 75px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 h2 {
     margin-left: 200px;
@@ -16,8 +17,6 @@ h2 {
     font-family: sans-serif;
     color: white;
     margin-top: 90px;
-
-
 }
 p {
     margin-left: 1200px;
@@ -29,5 +28,4 @@ p {
     width: 250px;
     padding: 20px 40px 20px 65px;
     border: 3px solid white;
-    
 }
