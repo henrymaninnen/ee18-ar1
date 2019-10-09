@@ -1,0 +1,54 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./bilder/pattern-1.jpg);
+}
+div {
+    background-color: #fff;
+    padding: 85px;
+    font-size: 40px;
+    margin: 150px auto 0px auto;
+    width: 500px;
+    border: dashed rgb(0, 0, 0);
+
+
+}
+h1 {
+    margin-bottom: 22px;
+    
+}
+p {
+    margin: 20px 0 20px 0;
+
+}
+a {
+    font-size: 20px;
+
+}
+.sida2{
+    background: url(./bilder/pattern-2.jpg);
+
+}
+.sida3{
+    background: url(./bilder/pattern-3.jpg)
+}
+.sida4{
+    background: url(./bilder/pattern-4.jpg);
+}
+.sida5{
+    background: url(./bilder/pattern5.jpg)
+}
+.sida6{
+    background: url(./bilder/pattern\ 6.jpg);
+
+}

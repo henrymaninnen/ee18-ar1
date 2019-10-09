@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Lora&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Uteseende på sidan */
+body {
+    background: rgb(63, 61, 61);
+    box-shadow: 3px 3px 10px red;
+
+}
+.sidan {
+    width: 800px;
+    font-family: 'Josefin Slab', serif;
+    background: gray;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px red;
+}
+h1 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 3px 3px 10px #f30606;    
+}
+/* Utseende på inläggen */
+.inlagg {
+    background: rgb(236, 7, 7);
+    padding: 50px;
+    margin: 15px 0 15px 0;
+}
+.bild {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px violet;
+}
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 25px;
+}
+.datum {
+    font-size: 25px;
+    color: 
+
+ }
+p {
+    font-size: 25px;
+
+}
+/* Utseende på sidfoten */
+.sidfot {
+
+}
+.namn {
+
+}
