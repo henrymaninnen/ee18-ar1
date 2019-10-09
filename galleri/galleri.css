@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Fredericka+the+Great&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* CSS clearfix mot box kollaps */
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+ 
+/* Uteseende på sidan */
+body{
+    background: url(./bilder/moon_venus.jpg)
+
+}
+.kontainer{
+    font-family: 'Alegreya', serif;
+    background-color: black;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+}
+h1{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+
+}
+.intro{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+
+}
+
+/* Uteseende på rutorna */
+.ruta{
+    background-color: black;
+    padding: 50px;
+   border-color: white;
+   border-radius: 10px;
+   margin-top: 50px;
+}
+img{
+    width: 300px;
+    background-color: white;
+    padding: 10px;;
+
+}
+.bildtext{
+    text-align: center;
+    background-color:rgb(24, 1, 1);
+
+}
+
+/* Utseende på sidfoten */
+.kalla{
+    background-color:rgb(19, 1, 1);
+
+}
+.vänster{
+    float: left;
+    margin-right: 20px;
+
+}
+.höger{
+    float: right;
+    margin-left: 20px;
+}
+hr{
+    clear: both;
+    visibility: hidden;
+}
+.texthöger{
+    text-align: center;
+
+}
+.textvänster{
+
+}
