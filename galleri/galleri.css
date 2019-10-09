@@ -18,7 +18,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     height: 0; 
     clear: both;
  }
- 
+
 /* Uteseende på sidan */
 body{
     background: url(./bilder/moon_venus.jpg)
@@ -70,6 +70,7 @@ img{
 /* Utseende på sidfoten */
 .kalla{
     background-color:rgb(19, 1, 1);
+    font-style: italic;
 
 }
 .vänster{
