@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Boogaloo|Concert+One&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Sidans färgpallet 
+$color1: rgba(48, 48, 54, 1);
+$color2: rgba(48, 188, 237, 1);
+$color3: rgba(255, 250, 255, 1);
+$color4: rgba(252, 96, 66, 1);
+$color5: rgba(5, 4, 1, 1); /* 
+
+/* Sidans utseende */
+body {
+    background: rgba(252, 96, 66, 1);
+
+}
+.kontainer {
+    font-family: 'Boogaloo', cursive;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50;
+    background: rgb(7, 133, 236);
+
+
+}
+.kontainer h1 {
+    font-family: 'Concert One', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: rgba(252, 96, 66, 1);
+
+    /* Menyns utseende */
+}
+.kontainer .meny {
+    text-align: center;
+
+}
+.kontainer .meny li {
+    list-style-type: none;
+    display: inline;
+
+}
+.kontainer .meny a {
+    background: rgba(48, 48, 54, 1);
+    padding: 5px;
+    color: rgb(8, 193, 240);
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 0 5px;
+    width: 150px;
+    display: inline-block;
+}
+.kontainer .meny a:hover {
+    background: rgba(252, 96, 66, 1);
+}
+.kontainer .meny .aktiv a {
+    background: rgba(252, 96, 66, 1);
+}
+
+/* Inhållets utseende */
+.kontainer h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+.kontainer figure {
+    background: white;
+    padding: 20px;
+    width: 500px;
+    padding: 25px;
+    margin: 0 auto;
+}
+.kontainer figure img {
+    width: 100%;
+
+}
+.kontainer figure figcaption {
+    text-align: center;
+
+
+}
+.kontainer p {
+    color: rgba(5, 4, 1, 1);
+    font-size: 20px;
+    margin-left: 50px;
+    
+
+}
+.kontainer .sidfot {
+    color: rgb(249, 249, 250);
+    font-style: italic;
+}
+.kontainer .sidfot a {}

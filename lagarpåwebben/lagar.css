@@ -1,0 +1,36 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blueviolet;
+
+}
+h1{
+    border: solid 5px white;
+    width: 230px;
+    text-align: center; 
+    margin:   
+
+}
+p{
+  font-size: 22px;  
+
+}
+img{
+    width: 10%;
+    
+}
+h2{
+
+}
+.gdprbild{
+
+}
