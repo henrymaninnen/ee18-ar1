@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduktion till Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Introduktion till Javascript</h1>
+    </div>
+    <script>
+        /* Slumpa fram ett tal */
+        var slumptal = Math.ceil(Math.random() *10) ;
+        console.log("Slumptal = " + slumptal);
+        
+
+        /* Läs av gissning */
+        var gissning = prompt("Gissa ett tall 1-10")
+
+        /* Är gissning = Slumptal? */
+        if (gissning  == slumptal) {
+            /* Rätt svar! */
+            location.replace("https:/www.hltv.org");
+        } else {
+            /* Fel svar! */
+            location.replace("https:/youtube.com")
+        }
+
+        
+
+        
+    
+    </script>
+    
+</body>
+</html>
