@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1 hidden>Mera Brännvin</h1>
+        <p hidden>Det är ett jävla tjatande om alkohol
+            De säger att det är nåt som vi inte tål
+            Men brännvin, det är nyttigt som själve fan
+            Och om våran lever slutar att fungera
+            Åker vi till USA och få den opererad</p>
+
+        <p id="p2" hidden>
+            Mera brännvin, mera brännvin
+            Mera brännvin, mera brännvin
+            Om vi svimmar någonstans får vi gratis ambulans
+            Mera brännvin
+        </p>
+
+        <p id="p2" hidden>När freda'n kommer super vi som jävla svin
+            Och ni börjar spya då är festen fin
+            För brännvin, det rensar våra organ
+            Och om någon svimmar av och tappar sansen
+            Då betalar socialen ambulansen
+        </p>
+        <button onclick="visaText()">Tryck på egen risk</button>
+        <button onclick="taBort()">Klicka inte på mig</button>
+    </div>
+    <script>
+        function visaText() {
+            window.animatelo.fadeInLeft("h1");
+            window.animatelo.fadeInLeft("p");
+            window.animatelo.fadeInLeft("p2");
+            window.animatelo.fadeInLeft("p3");
+            /* Hitta element jag jobbar på */
+            const elementH1 = document.querySelector("h1");
+            const elementP = document.querySelector("p");
+            const elementP2 = document.querySelector("#p2");
+            const elementP3 = document.querySelector("#p3");
+
+            /* Göra texten synlig igen */
+            elementH1.hidden = false;
+            elementP.hidden = false;
+            elementP2.hidden = false;
+            elementP3.hidden = false;
+
+
+        }
+        function taBort(){
+            const elementBody = document.querySelector("body");
+            elementBody.hidden = true;
+
+        }
+    </script>
+</body>
+</html>
