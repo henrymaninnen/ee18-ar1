@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer kol3">
+        <img id="img1" src="./foton/photo-1558981852-426c6c22a060.jpg" alt="Motorcykel">
+        <img id="img2" src="./foton/photo-1574722127046-4401b3a2a004.jpg" alt="Hus">
+        <img id="img3" src="./foton/photo-1574782218383-53ab5a58c972.jpg" alt="Mat">
+        <button onclick="blink1()">Starta blink</button>
+        <button onclick="sepia()">Sepia</button>
+        <button onclick="invert()">Invert</button>
+    </div>
+    <script>
+        /* element vi ska arbeta med */
+        const elementImg1 = document.querySelector("#img1");
+        const elementImg2 = document.querySelector("#img2");
+        const elementImg3 = document.querySelector("#img3");
+
+        function svartVit() {
+            elementImg1.classList.toggle("gråskala");
+
+        }
+        function sepia() {
+        elementImg2.classList.toggle("sepia")
+        
+            
+        }
+        function invert() {
+            elementImg3.classList.toggle("invert")
+            
+        }
+        function blink1() {
+            setInterval(svartVit, 500)
+        }
+    </script>
+</body>
+</html>

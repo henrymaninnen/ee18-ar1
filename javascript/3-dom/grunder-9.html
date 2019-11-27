@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <img id="img1" src="./foton/photo-1558981852-426c6c22a060.jpg" alt="Motorcykel">
+    </div>
+    <script>
+        /* element vi ska arbeta med */
+      const elementImg1 = document.querySelector("#img1");
+      setInterval(flasha, 1);
+
+      function flasha() {
+        elementImg1.classList.toggle("invert");
+
+          
+      }
+    </script>
+</body>
+</html>
