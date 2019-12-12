@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styla kalendern */
+
+body{
+    background: url(../foton/julbild.jpg);
+
+}
+.kontainer{
+    background: rgb(153, 24, 24);
+    width: 800px;
+    margin: auto;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #Fff;
+    text-align: center  ;
+
+}
+h1{
+    font-size: 80px;
+
+}
+.kalender{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+padding: 20px;
+}
+.ruta{
+ font-size: 30px;
+ background: rgb(30, 109, 30);
+ width: 100px;
+ height: 100px;
+ padding: 25px;
+ border-radius: 8px;
+ transition-duration: .8s;
+ box-shadow: 0 0 10px #Fff;
+}
+.ruta:hover {
+    background:  rgb(41, 163, 41);
+}
+.klapp1{
+    background: url(../foton/klapp1.jpg) center;
+    background-size: 80px 80px;
+    animation: tona 5s;
+    font-size: 0;
+    pointer-events: NONE;
+}
+@keyframes tona{
+    from{
+        opacity: 0;
+
+    }
+    to{
+opacity: 1;
+    }
+}

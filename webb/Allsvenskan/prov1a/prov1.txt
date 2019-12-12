@@ -1,0 +1,2 @@
+1. Lätt att förstå, inga onädiga mellanrum mellan dina rader, använda kommentarer så det blir lättare att förstå på båda din css och html
+2. Man kan kolla om man har några fel (nere åt vänster), sedan kan man trycka ctrl B för att snygga till den
