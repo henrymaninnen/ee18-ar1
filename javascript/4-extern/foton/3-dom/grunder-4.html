@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>I Rörelse</h1>
+        <p id="p1">Den mätta dagen, den är aldrig störst. <br>
+            Den bästa dagen är en dag av törst.</p>
+        <p id="p2">Nog finns det mål och mening i vår färd - <br>
+            men det är vägen, som är mödan värd.</p>
+        <img src="../bilder/eld.jpg" alt="Bild på eld">
+
+        <button id="b1" onclick="mörkt()">Mörkt läge</button>
+        <button id="b2" onclick="ljust()">Ljust läge</button>
+    </div>
+    <script>
+        function mörkt() {
+            /* Hitta alla element som vi ska jobba på */
+            const elementBox = document.querySelector(".kontainer");
+            const elementH1 = document.querySelector("H1");
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+            const elementKnapp1 = document.querySelector("#knapp1");
+            const elementKnapp2 = document.querySelector("#knapp2");
+            const elementBild = document.querySelector("img");
+
+
+            document.title = "mörkt läge";
+            document.body.style.cssText = "background: #000;";
+            elementBox.style.cssText = "background: #222; color: #fff;";
+            elementP1.style.cssText = "background: #222; color: #fff"
+            elementP2.style.cssText = "background: #222; color: #fff"
+            elementKnapp1.style.cssText = "background: #222; color: #fff"
+            elementKnapp2.style.cssText  = "background: #222; color: #fff"
+            elementBild.style.cssText = "background: #222; color: #fff"
+        }
+
+        function ljust() {
+            const elementBox = document.querySelector(".kontainer");
+            const elementH1 = document.querySelector("H1");
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+            const elementKnapp1 = document.querySelector("#knapp1");
+            const elementKnapp2 = document.querySelector("#knapp2");
+            const elementBild = document.querySelector("img");
+
+
+            document.body.style.backgroundColor = "#fff";
+            document.body.style.color = "red";
+            document.title = "mörkt läge";
+            elementBox.style.backgroundColor = "#fff";
+            elementP1.style.backgroundColor = "#fff";
+            elementP2.style.backgroundColor = "#fff";
+            elementBild.style.backgroundColor = "#fff";
+        }
+    </script>
+</body>
+</html>

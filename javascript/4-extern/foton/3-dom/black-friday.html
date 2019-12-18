@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Black Friday</title>
+    <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <img id="img1" src="./foton/photo-1574782218383-53ab5a58c972.jpg" alt="Frukost">
+        <img id="img2" class="dold" src="./foton/kaffe.jpg" alt="kaffe">
+        <img id="img3" class="dold" src="./foton/kaffe3.jpg" alt="kaffe3">
+
+
+        <button onclick="visaReklam()">FÅ 80% RABBAT PÅ ALLT KAFFE</button>
+
+    </div>
+    <script>
+        /* element vi arbetar med */
+        const elementImg1 = document.querySelector("#img1");
+        const elementImg2 = document.querySelector("#img2");
+        const elementImg3 = document.querySelector("#img3");
+
+        /* Fördröjning */
+        setTimeout(visaBild, 1000);
+
+        function visaBild() {
+            elementImg1.classList.remove("dold");
+        }
+
+        function visaReklam() {
+            elementImg2.classList.toggle("dold");
+            elementImg1.classList.toggle("dold");
+            window.animatelo.flip('#img2');
+            setTimeout(visaSpam, 3000);
+        }
+        function visaSpam() {
+            //setInterval(flasha, 100);
+            elementImg1.classList.toggle("dold");
+            elementImg3.classList.toggle("dold");
+            elementImg2.hidden = true;
+            elementImg1.hidden = true;
+            setTimeout(togglaMellanReklamSpam, 3000);
+        }
+        function togglaMellanReklamSpam() {
+            elementImg2.classList.toggle("dold")
+            elementImg3.classList.toggle("dold")
+            setInterval(togglaMellanReklamSpam, 2000);
+            
+
+            
+            
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>I Rörelse</h1>
+        <p id="p1">Den mätta dagen, den är aldrig störst. <br>
+            Den bästa dagen är en dag av törst.</p>
+        <p id="p2">Den mätta dagen, den är aldrig störst. <br>
+            Den bästa dagen är en dag av törst.</p>
+
+        <button onclick="stylaRubrik()">Styla rubriken</button>
+        <button onclick="stylaTexten()">Styla texten</button>
+    </div>
+    <script>
+        function stylaRubrik() {
+            /* Hitta elementet som är skapat av taggen <h1> */
+           const elementH1 = document.querySelector("h1");
+          /* Ändra textfärg på elementet till blå */
+           elementH1.style.color = "blue";
+
+           /* Ändra rubrikens textstorlek till 60px */
+           elementH1.style.fontsize = "60px";
+
+           /* Ändra typsnitt på rubriken till courier */
+
+           elementH1.style.fontFamily = "Courier";
+        }
+        function stylaTexten() {
+            /* Hitta elementet */
+           const elementP1 = document.querySelector("#p1");
+           const elementP2 = document.querySelector("#p2");
+
+            /* Sätta igång och styla 3,4 egenskaper */
+            elementP1.style.color = "red";
+            elementP1.style.fontsize = "20px";
+            elementP1.style.fontFamily = "sans-serif";
+            elementP2.style.color = "red";
+            elementP2.style.fontsize = "20px";
+            elementP2.style.fontFamily = "sans-serif";
+        }
+<
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Åldersgränser</h1>
+        <i id="pil16" onclick="visaText16()" class="fa fa-angle-right">18år</i>
+        <ul id="text16" class="animated dold fa-ul">
+            <li><li><i class="fa-li fa fa-check-square"></i> </li>Du får ta ett normalt, riskfritt arbete, det vill säga </li>
+            <li><li><i class="fa-li fa fa-check-square"></i s</li>jobba 40 timmar i veckan. Men arbetsgivaren har lite mer</li>
+            <li><li><i class="fa-li fa fa-check-square"></i> </li>ansvar för dig som inte är myndig än för dina myndiga li arbetskamrater.</li>
+            <li><li><i class="fa-li fa fa-check-square"></i> </li>Du får starta egen firma.</li>
+            <li><li><i class="fa-li fa fa-check-square"></i> </li>Du får själv bestämma över de pengar du tjänar.</li>
+            <li><li><i class="fa-li fa fa-check-square"></i> </li>Du får ta körkort för lätt motorcykel och traktor.</li>
+            <li><li><i class="fa-li fa fa-check-square"></i> </li>Du får börja övningsköra bil.</li>
+            <li><li><i class="fa-li fa fa-check-square"></i> </li>Du får anmäla flyttning och skriva under din anmälan själv.</li>
+            <li><li><i class="fa-li fa fa-check-square"></i> </li>Dina föräldrar får inte längre barnbidrag för dig. Nu får du istället studiebidrag</li>
+        </p>
+
+        <i id="pil18" onclick="visaText18()" class="fa fa-angle-right">18år</i>
+
+        <p id="text18" class="animated dold fa-ul">Du blir myndig. <br>
+            Du får gifta dig. <br>
+            Du får rösta. <br>
+            Du får köpa cigaretter. <br>
+            Du får köpa alkohol på restaurang och öl i affärer. <br>
+            Du får ta körkort. <br>
+            Enligt lagen slutar dina föräldrars underhållsskyldighet när du <br>fyllt 18 år. Det betyder att de inte är skyldiga att försörja <br>dig längre. Men om du fortfarande går i skolan fortsätter <br>föräldrarnas underhållsskyldighet. De ska i så fall försörja <br>dig så länge du går på gymnasiet eller tills du fyller 21 år.</p>
+    </div>
+    <script>
+        /* element vi ska arbeta med */
+        const elementText16 = document.querySelector("#text16");
+        const elementText18 = document.querySelector("#text18");
+        const elementPil16 = document.querySelector("#pil16");
+        const elementPil18 = document.querySelector("#pil18");
+
+        function visaText16() {
+            elementText16.classList.add("wobble");
+            elementText16.classList.toggle("dold");
+            elementPil16.classList.add("wobble", "fa fa-angle-right");
+            elementPil16.classList.add("wobble", "fa fa-angle-down");
+        }
+
+        function visaText18() {
+            elementText18.classList.add("shake");
+            elementText18.classList.toggle("dold");
+            elementPil18.classList.add("wobble", "fa fa-angle-right");
+            elementPil18.classList.add("wobble", "fa fa-angle-down");
+        }
+    </script>
+</body>
+</html>
