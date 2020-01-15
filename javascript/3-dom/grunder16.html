@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Omvandla från celsius till farenheit</h1>
+        <h2>Input</h2>
+        <label>Ange tempratur i celsius</label>
+        <input id="ruta" type="text">
+        <button onclick="omvandla()">Skicka</button>
+        <h2>Ouput</h2>
+        <p>Resultat</p>
+        <meter min="0" max="200"></meter>
+        <div class="tempratur"></div>
+    </div>
+
+    <script>
+        /* Kod som körs vid start */
+        /* Element vi ska arbeta med */
+        const elementRuta = document.querySelector("#ruta");
+        const elementP = document.querySelector("p");
+        const elementMeter = document.querySelector("meter");
+        const elementTempratur = document.querySelector(".tempratur");
+
+        /* Kod som körs när man klickar */
+        function omvandla() {
+            /* Läs av ruta */
+            var celsius = elementRuta.value;
+
+            /* Omvandla */
+            var farenheit = celsius * 9 / 5 + 32;
+
+            /* Skriv ut */
+            elementP.textContent = farenheit;
+            elementMeter.value = farenheit;
+
+            if (celsius < 10) {
+                elementTempratur.innerHTML = "<img src=\"./bilder/kallt.jpg\" alt=\"kallt\">";
+            } else {
+                if (celsius > 30) {
+                    elementTempratur.innerHTML = "<img src=\"./bilder/varmt.jpg\" alt=\"kallt\">";
+                } else {
+                    elementTempratur.innerHTML = "<img src=\"./bilder/lagom.jpg\" alt=\"kallt\">";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

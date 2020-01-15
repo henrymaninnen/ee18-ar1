@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Spamskydd</h1>
+        <h2>Input</h2>
+        <label>Vad är ...?</label>
+        <input id="ruta" type="text">
+        <button onclick="rätta()">Skicka</button>
+        <h2>Ouput</h2>
+        <p>Resultat</p>
+    </div>
+
+    <script>
+        /* Kod som körs vid start */
+        /* Element vi ska arbeta med */
+        const elementP = document.querySelector("p");
+        const elementRuta = document.querySelector("#ruta");
+        const elementLabel = document.querySelector("label");
+
+        /* Slumpa fram 2 tal */
+        var slumptal1 = Math.ceil(Math.random() * 10);
+        var slumptal2 = Math.ceil(Math.random() * 10);
+        var summa = slumptal1 + slumptal2;
+
+        /* Skriv ut frågan */
+        elementLabel.textContent = "Vad är " + slumptal1 + "  +  " + slumptal2 + "?";
+
+        /* Kod som körs när man klickar */
+        function rätta() {
+            /* Läs av gissning */
+            var gissning = elementRuta.value;
+            /* Kolla om gissning är rätt */
+            if (gissning == summa) {
+                /* Skriv ut om det är rätt */
+                elementP.textContent = "Rätt svar";
+            } else {
+                /* Skriv ut om det är fel */
+                elementP.textContent = "Fel svar";
+            }
+            
+        }
+    </script>
+</body>
+</html>

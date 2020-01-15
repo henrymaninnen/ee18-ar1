@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Gissa ett tal</h1>
+        <h2>Input</h2>
+        <label>Gissa ett tal 1-10</label>
+        <input id="ruta" type="text">
+        <button onclick="testaGissning()">Skicka</button>
+
+        <h2>Ouput</h2>
+        <p>Resultat</p>
+        <div class="tumme"></div>
+    </div>
+
+    <script>
+        /* Kod som körs vid start */
+        /* Element vi skall arbeta med */
+        const elementRuta = document.querySelector("#ruta");
+        const elementP = document.querySelector("p");
+        const elementTumme = document.querySelector(".tumme");
+
+        /* Skapa ett slumptal */
+        var slumptal = Math.ceil(Math.random() * 10);
+        console.log("slumptal = ", slumptal);
+
+        /* Kod som körs när man klickar */
+        function testaGissning() {
+            var gissning = elementRuta.value;
+            console.log("gissning = ", gissning);
+
+            /* Se om gissning är rätt */
+            if (gissning == slumptal) {
+                console.log("Rätt svar!");
+                elementP.textContent = "Rätt svar";
+                elementTumme.innerHTML = "<img src=\"./bilder/tumme-upp.png\" alt=\"tumme-upp\">";
+            } else {
+                /* Om förlågt skriv förlågt */
+                if (gissning < slumptal) {
+                    console.log("för lågt");
+                    elementP.textContent = "För lågt";
+                    elementTumme.innerHTML = "<img src=\"./bilder/low.jpg\" alt=\"tumme-ned\">";
+                } else {
+                    console.log("för högt");
+                    elementP.textContent = "För högt";
+                    elementTumme.innerHTML = "<img src=\"./bilder/high.jpg\" alt=\"tumme-ned\">";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

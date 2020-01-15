@@ -129,3 +129,11 @@ body {
 .kontainer .invert {
     filter: invert(100%);
 }
+.fa-thumbs-up {
+    font-size: 48px;
+    color: green;
+}
+.fa-thumbs-down {
+    font-size: 48px;
+    color: red;
+}
