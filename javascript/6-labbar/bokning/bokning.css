@@ -1,0 +1,23 @@
+body {
+    background: url("./bilder/hotel-riktiga.jpg");
+    background-size: auto ;
+    background-attachment: fixed;
+}
+.kontainer {
+    width: 600px;
+    padding: 2em;
+    margin: 3em auto;
+    background: #fff;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 12px #f0e9d1;
+}
+.kontainer fieldset{
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    padding: 0  0 10px 20px;
+}
+.kontainer legend , .kontainer select, .kontainer #kampanjkod{
+    width: auto;
+}
