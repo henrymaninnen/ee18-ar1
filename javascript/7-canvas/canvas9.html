@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        /* Element vi jobbar med */
+
+        const eCanvas = document.querySelector("canvas");
+
+        /* Ställ in width och height på canvas */
+
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+
+        /* Aktivera ritmotorn */
+        var ctx = eCanvas.getContext("2d");
+
+        /* Välj en fyllndasfärg */
+        ctx.fillStyle = "black";
+        ctx.font = "24px sans-serif"
+
+        /* Slumpa fram ett tal */
+        var x = Math.random();
+        console.log(x);
+
+
+        /* Slumpa fram en fyrkant */
+        var x = Math.ceil(Math.random() * 800);
+        console.log(x);
+        ctx.fill(x, 100, 50, 50);
+
+
+
+
+        function star(R, cX, cY, N) {
+  //star draw
+  ctx.beginPath();
+  ctx.moveTo(cX + R,cY);
+  for(var i = 1; i <= N * 2; i++)
+  {
+    if(i % 2 == 0){
+      var theta = i * (Math.PI * 2) / (N * 2);
+      var x = cX + (R * Math.cos(theta));
+      var y = cY + (R * Math.sin(theta));
+    } else {
+      var theta = i * (Math.PI * 2) / (N * 2);
+      var x = cX + ((R/2) * Math.cos(theta));
+      var y = cY + ((R/2) * Math.sin(theta));
+    }
+
+    ctx.lineTo(x ,y);
+  }
+  ctx.closePath();
+  ctx.stroke();
+}
+
+    </script>
+</body>
+</html>

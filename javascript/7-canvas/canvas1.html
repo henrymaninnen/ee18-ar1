@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="./canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+    /* Element vi jobbar med */
+
+    const eCanvas = document.querySelector("canvas");
+
+    /* Ställ in width och height på canvas */
+
+    eCanvas.width = 800;
+    eCanvas.height = 600;
+
+    /* Aktivera ritmotorn */
+    var ctx = eCanvas.getContext("2d");
+
+        /* Rita en rektangel */
+        ctx.fillRect(100, 100, 200, 200);
+
+        /* Rita en färgad rektangel */
+
+        ctx.fillStyle = "darkblue"
+        ctx.fillRect(100, 400, 200, 100);
+
+        ctx.fillStyle = "orange"
+        ctx.fillRect(100, 500, 200, 100);
+
+        /* Rita rutmönster */
+
+        ctx.fillStyle = "black"
+        ctx.fillRect(400, 100, 50, 50)
+
+
+        ctx.fillStyle = "yellow"
+        ctx.fillRect(450, 100, 50, 50)
+
+
+        ctx.fillStyle = "black"
+        ctx.fillRect(500, 100, 50, 50)
+
+
+        ctx.fillStyle = "yellow"
+        ctx.fillRect(500, 150, 50, 50)
+
+
+        ctx.fillStyle = "black"
+        ctx.fillRect(450, 150, 50, 50)
+
+
+        ctx.fillStyle = "yellow"
+        ctx.fillRect(400, 150, 50, 50)
+       
+
+
+
+
+        /* Svenska flaggan */
+        ctx.fillStyle = "yellow"
+        ctx.fillRect(400, 450, 50, 50)
+        ctx.fillRect(400, 400, 50, 50)
+        ctx.fillRect(400, 350, 50, 50)
+        ctx.fillRect(400, 300, 50, 50)
+        ctx.fillRect(600, 400, 50, 50)
+        ctx.fillRect(550, 400, 50, 50)
+        ctx.fillRect(500, 400, 50, 50)
+        ctx.fillRect(450, 400, 50, 50)
+        ctx.fillRect(350, 400, 50, 50)
+        ctx.fillRect(300, 400, 50, 50)
+
+
+
+        ctx.fillStyle = "blue"
+       
+      
+        ctx.fillRect(300, 300, 50, 50)
+        ctx.fillRect(300, 300, 50, 50)
+        ctx.fillRect(350, 300, 50, 50)
+        ctx.fillRect(450, 300, 50, 50)
+        ctx.fillRect(500, 300, 50, 50)
+        ctx.fillRect(550, 300, 50, 50)
+        ctx.fillRect(600, 300, 50, 50)
+
+        ctx.fillRect(300, 350, 50, 50)
+        ctx.fillRect(300, 350, 50, 50)
+        ctx.fillRect(350, 350, 50, 50)
+        ctx.fillRect(450, 350, 50, 50)
+        ctx.fillRect(500, 350, 50, 50)
+        ctx.fillRect(550, 350, 50, 50)
+        ctx.fillRect(600, 350, 50, 50)
+
+        ctx.fillRect(500, 450, 50, 50)
+        ctx.fillRect(550, 450, 50, 50)
+        ctx.fillRect(600, 450, 50, 50)
+        ctx.fillRect(450, 450, 50, 50)
+        ctx.fillRect(350, 450, 50, 50)
+        ctx.fillRect(300, 450, 50, 50)
+
+
+
+        /* Rita en linje */
+
+        ctx.lineTo(400, 300);
+        ctx.moveTo(0, 0);
+        ctx.lineTo(400, 300);
+        ctx.lineTo(500, 300);
+        ctx.lineTo(700, 100);
+        ctx.lineTo(400, 300);
+        ctx.stroke();
+
+    
+       
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>
