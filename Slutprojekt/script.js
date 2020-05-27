@@ -1,6 +1,6 @@
-function toggleClass() {
-    var menu = document.querySelector(".hamburger");
-    menu.classList.toggle("toggleCls");
-}
-var hamburger = document.querySelector(".hamburger");
-hamburger.addEventListener("click", toggleClass)
+const menyToggle = document.querySelector(".meny-toggle");
+const navBar = document.querySelector("header-navigation")
+    
+menyToggle.addEventListener("click", () => {
+    navBar.classList.toggle("change");
+});
