@@ -7,7 +7,7 @@
 
      } else if (input == "protein") {
          location.href = "./protein.html";
-         return false;
+         return false; 
 
      } else if (input == "pwo") {
          location.href = "./pwo.html";
